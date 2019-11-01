@@ -9,7 +9,7 @@
         <!--Find A Crew-->
         <scene sceneID="NGq-lm-6e0">
             <objects>
-                <tableViewController id="FFQ-3V-XYC" sceneMemberID="viewController">
+                <tableViewController id="FFQ-3V-XYC" customClass="PersonSearchTableViewController" customModule="FindACrew" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QKt-0y-GNw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="t2H-1W-nfd">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="t2H-1W-nfd" customClass="PersonTableViewCell" customModule="FindACrew" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t2H-1W-nfd" id="Kwt-iR-qRz">
@@ -58,6 +58,11 @@
                                         <constraint firstItem="muD-0M-3OA" firstAttribute="top" secondItem="Kwt-iR-qRz" secondAttribute="topMargin" id="mFo-Nq-Nia"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="birthYearLabel" destination="LxU-k8-Ndr" id="Qdi-BF-bCI"/>
+                                    <outlet property="genderLabel" destination="zzi-Ij-jP4" id="kb3-Br-eMV"/>
+                                    <outlet property="nameLabel" destination="vA4-f1-k0s" id="UaF-48-EJB"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -66,10 +71,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Find A Crew" id="WC7-fZ-um2"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Y1e-bj-pmP" id="830-86-enK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73Z-7Z-gb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="621.73913043478262" y="129.91071428571428"/>
+            <point key="canvasLocation" x="541" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Hv-YD-q1C">

@@ -14,6 +14,10 @@
 		830AEDB3236BC2A0001220BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830AEDB1236BC2A0001220BD /* LaunchScreen.storyboard */; };
 		830AEDBE236BC2A0001220BD /* FindACrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830AEDBD236BC2A0001220BD /* FindACrewTests.swift */; };
 		830AEDC9236BC2A0001220BD /* FindACrewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830AEDC8236BC2A0001220BD /* FindACrewUITests.swift */; };
+		830AEDD8236BC72E001220BD /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830AEDD7236BC72E001220BD /* PersonSearchTableViewController.swift */; };
+		830AEDDA236BC753001220BD /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830AEDD9236BC753001220BD /* PersonTableViewCell.swift */; };
+		830AEDDD236BCAD2001220BD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830AEDDC236BCAD2001220BD /* Person.swift */; };
+		830AEDDF236BCEA1001220BD /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830AEDDE236BCEA1001220BD /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		830AEDC4236BC2A0001220BD /* FindACrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindACrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830AEDC8236BC2A0001220BD /* FindACrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACrewUITests.swift; sourceTree = "<group>"; };
 		830AEDCA236BC2A0001220BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830AEDD7236BC72E001220BD /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
+		830AEDD9236BC753001220BD /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		830AEDDC236BCAD2001220BD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		830AEDDE236BCEA1001220BD /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		830AED9A236BC291001220BD = {
 			isa = PBXGroup;
 			children = (
+				830AEDDB236BCABE001220BD /* Models */,
+				830AEDD6236BC71D001220BD /* ViewControllers */,
 				830AEDA5236BC291001220BD /* FindACrew */,
 				830AEDBC236BC2A0001220BD /* FindACrewTests */,
 				830AEDC7236BC2A0001220BD /* FindACrewUITests */,
@@ -123,6 +133,24 @@
 				830AEDCA236BC2A0001220BD /* Info.plist */,
 			);
 			path = FindACrewUITests;
+			sourceTree = "<group>";
+		};
+		830AEDD6236BC71D001220BD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				830AEDD7236BC72E001220BD /* PersonSearchTableViewController.swift */,
+				830AEDD9236BC753001220BD /* PersonTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		830AEDDB236BCABE001220BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				830AEDDC236BCAD2001220BD /* Person.swift */,
+				830AEDDE236BCEA1001220BD /* PersonController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830AEDDD236BCAD2001220BD /* Person.swift in Sources */,
+				830AEDD8236BC72E001220BD /* PersonSearchTableViewController.swift in Sources */,
 				830AEDA7236BC291001220BD /* AppDelegate.swift in Sources */,
+				830AEDDA236BC753001220BD /* PersonTableViewCell.swift in Sources */,
+				830AEDDF236BCEA1001220BD /* PersonController.swift in Sources */,
 				830AEDA9236BC291001220BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
