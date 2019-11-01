@@ -15,5 +15,5 @@ struct Person: Codable {
 }
 //this is unwrapping INTO the JSON to get into the deeper files
 struct PersonSearch: Codable {
-    let results: [Person] = []
+    let results: [Person] 
 }
