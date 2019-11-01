@@ -28,7 +28,7 @@ class PersonController {
     
     //MARK: Networking
     
-    let baseURL = URL(string: "http swapi.co/api/people")! //unwrap this later
+    let baseURL = URL(string: "https://swapi.co/api/people")! //unwrap this later
     
     //MARK: Neworking Method Call
     
@@ -68,6 +68,7 @@ class PersonController {
             }
             //turn it from json to swift
             let jsonDecoder = JSONDecoder()
+            jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
             //since it can throw an error, let's catch it.
             do{
                 //lists the object type that comes out. we made the model type of the JSON data in the model files called PersonSearch. which holds the result data.
