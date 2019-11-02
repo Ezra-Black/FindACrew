@@ -27,6 +27,6 @@ class PersonTableViewCell: UITableViewCell {
         
         nameLabel.text = person.name
         genderLabel.text = "Gender: \(person.gender)"
-        birthYearLabel.text = "Birth Year: \(person.birth_year)"
+        birthYearLabel.text = "Birth Year: \(person.birthYear)"
     }
 }
